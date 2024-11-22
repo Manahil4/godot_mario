@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bal624jcrv702"
+path="res://.godot/imported/interference.wav-63758404f5d32665f1118c57e37b597b.sample"
+
+[deps]
+
+source_file="res://Asset/Assets/Music/Retro Sounds/audio effects retro/Machines/interference.wav"
+dest_files=["res://.godot/imported/interference.wav-63758404f5d32665f1118c57e37b597b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

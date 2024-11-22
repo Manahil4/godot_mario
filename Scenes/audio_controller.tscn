@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://cf62x3vnmq7ul"]
+
+[ext_resource type="Script" path="res://Scripts/audio_controller.gd" id="1_sqy2m"]
+[ext_resource type="AudioStream" uid="uid://bon01klef17xi" path="res://Asset/brackeys_platformer_assets/brackeys_platformer_assets/music/time_for_adventure.mp3" id="2_6p2xf"]
+[ext_resource type="AudioStream" uid="uid://1uwr6xt4gwrw" path="res://Asset/brackeys_platformer_assets/brackeys_platformer_assets/sounds/jump.wav" id="2_kfac1"]
+[ext_resource type="AudioStream" uid="uid://bpe5hwbycwte2" path="res://Asset/Assets/Music/kl-peach-game-over-iii-142453.mp3" id="3_s87pa"]
+[ext_resource type="AudioStream" uid="uid://5bn1f5wevqcv" path="res://Asset/brackeys_platformer_assets/brackeys_platformer_assets/sounds/coin.wav" id="4_xbwc6"]
+[ext_resource type="AudioStream" uid="uid://b8wrl7bso2ojk" path="res://Asset/brackeys_platformer_assets/brackeys_platformer_assets/sounds/hurt.wav" id="6_sxx1l"]
+[ext_resource type="AudioStream" uid="uid://bmbmikbpw4emn" path="res://Asset/brackeys_platformer_assets/brackeys_platformer_assets/sounds/explosion.wav" id="7_5naj6"]
+
+[node name="AudioController" type="Node2D"]
+script = ExtResource("1_sqy2m")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_6p2xf")
+volume_db = 6.753
+pitch_scale = 1.47
+autoplay = true
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_kfac1")
+pitch_scale = 1.76
+
+[node name="End_level" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_s87pa")
+pitch_scale = 2.03
+
+[node name="coin" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_xbwc6")
+pitch_scale = 2.55
+autoplay = true
+
+[node name="fall" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_sxx1l")
+
+[node name="enemy_collision" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_5naj6")
